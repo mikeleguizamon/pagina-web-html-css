@@ -74,3 +74,13 @@ header a{
 header a:hover{
   color: blueviolet;
 }
+
+#hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+}
