@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -10,11 +14,7 @@ body{
 h1{ font-size: 3.5em;}
 h2{ font-size: 2.7em;}
 h3{ font-size: 2em;}
-
-p{
-  font-size: 1.25em;
-}
-
+p{ font-size: 1.25em;}
 ul{ list-style: none;}
 li{ font-size: 1.25em;}
 
@@ -37,6 +37,10 @@ button:hover{
 .container{
   max-width: 1480px;
   margin: auto;
+}
+
+.accent-color{
+  color: blueviolet;
 }
 
 header{
@@ -83,4 +87,85 @@ header a:hover{
   flex-direction: column;
   height: 90vh;
   color: white;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  ) 
+  ,url("../media/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero h1{
+  color: white;
+}
+
+#about-us .container{
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#our-programs{
+  background-color: rgb(30, 30, 30);
+  color: white;
+  text-align: center;
+}
+
+#our-programs .container{
+  padding: 100px 0px;
+  text-align: center;
+}
+
+#our-programs h2{
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#our-programs p{
+  display: none;
+}
+
+#our-programs .cards{
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+.cards:first-child{
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  ) 
+  ,url("../media/front-end.jpg");
+}
+
+.cards:nth-child(2){
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  ) 
+  ,url("../media/full-stack.jpg");
+}
+
+.cards:nth-child(3){
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  ) 
+  ,url("../media/python.jpg");
+}
+
+#characteristics .container{
+  text-align: center;
+}
+
+#characteristics li{
+  margin: 12px 0px;
 }
